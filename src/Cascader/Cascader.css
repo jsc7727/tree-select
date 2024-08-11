@@ -60,7 +60,7 @@
 
 .rc-cascader-menu {
   display: inline-block;
-  width: 100px;
+  min-width: 100px;
   height: 192px;
   list-style: none;
   margin: 0;
@@ -116,6 +116,7 @@
 
 .rc-cascader-menu-item-expand {
   position: relative;
+  padding-right: 32px;
 }
 
 .rc-cascader-menu-item-expand-icon {
@@ -139,6 +140,17 @@
 
 .rc-cascader-menu-item-active .rc-cascader-menu-item-expand-icon {
   transform: translateY(-50%) rotate(180deg);
+}
+
+
+.rc-cascader-dropdown-hidden {
+  display: none;
+}
+
+.rc-cascader-dropdown {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
 

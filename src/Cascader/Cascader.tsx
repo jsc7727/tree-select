@@ -8,14 +8,20 @@ import './Cascader.css';
 
 
 const Cascader = () => {
+
+    // const [isOpen, setIsOpen] = React.useState(false);
     const handleChange = (value: string[]) => {
         console.log(value);
+        // setIsOpen(false);
     };
 
     return (
-        <Flex className="custom-cascader-container">
-            <RcCascader options={options} onChange={handleChange} className="custom-cascader" />
-        </Flex>
+        <RcCascader
+            options={options}
+            onChange={handleChange}
+            showSearch
+            changeOnSelect
+            expandTrigger="hover" />
     );
 }
 
